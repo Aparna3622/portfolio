@@ -1018,5 +1018,126 @@
       gap: 1rem;
       text-align: center;
     }
+
+    /* Overall Spacing & Typography */
+    html {
+      font-size: 15px; 
+    }
+    
+    body {
+      cursor: auto; /* Reset cursor for mobile */
+      -ms-overflow-style: auto;
+      scrollbar-width: auto;
+    }
+
+    body::-webkit-scrollbar {
+      display: block; /* Show scrollbar on mobile */
+      width: 8px;
+    }
+
+    body::-webkit-scrollbar-track {
+      background: var(--bg-main);
+    }
+
+    body::-webkit-scrollbar-thumb {
+      background: var(--primary-col);
+      border-radius: 4px;
+    }
+
+    .custom-cursor, .custom-cursor-follower {
+      display: none !important; /* Hide custom cursor on mobile */
+    }
+    
+    .close-btn {
+      cursor: pointer;
+    }
+
+    .section {
+      padding: 5rem 0;
+    }
+
+    .section-title {
+      font-size: 2.2rem;
+      margin-bottom: 3rem;
+    }
+
+    /* Grid Adjustments */
+    .skills-wrapper {
+      grid-template-columns: 1fr;
+    }
+
+    .projects-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .about-stats {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .stat-number {
+      font-size: 2.5rem;
+    }
+
+    /* Timeline Adjustments */
+    .timeline::before {
+      left: 10px;
+    }
+
+    .timeline-dot {
+      left: 2px;
+    }
+
+    .timeline-item {
+      padding-left: 35px;
+      margin-bottom: 2.5rem;
+    }
+
+    /* Research Section Adjustments */
+    .research-card {
+      padding: 1.5rem;
+      gap: 1rem;
+      flex-direction: column;
+    }
+
+    .research-icon {
+      padding: 1rem;
+    }
   }
-  
+
+  @media (max-width: 480px) {
+    html {
+      font-size: 14px;
+    }
+
+    .hero-action {
+      flex-direction: column;
+      gap: 1.5rem;
+      width: 100%;
+    }
+
+    .hero-action .btn-outline {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .contact-content h2 {
+      font-size: 2.2rem;
+    }
+
+    .big-btn {
+      padding: 1rem 2rem;
+      font-size: 1rem;
+    }
+
+    .blob-1 {
+      width: 250px;
+      height: 250px;
+    }
+
+    .blob-2 {
+      width: 200px;
+      height: 200px;
+    }
+  }
